@@ -36,12 +36,12 @@ jobs:
     # Ce job ne s'exécutera que si le job build a réussi
     needs: build
     runs-on: ubuntu-latest
-    if: success()  # Exécute ce job uniquement si les tests réussissent
-
     steps:
       # Vérifier à nouveau le code du dépôt pour fusionner
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+            fetch-depth: 0
 
       # Configurer Git (nécessaire pour les commandes git)
 

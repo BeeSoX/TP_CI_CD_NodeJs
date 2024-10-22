@@ -19,5 +19,7 @@ jobs:
           node-version: '20'
       - name: Installation des dépendances
         run: npm install
+      - name: Fix Jest Permissions
+        run: chmod +x ./node_modules/.bin/jest
       - name: Exécution des tests
         run: npm test

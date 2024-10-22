@@ -50,4 +50,4 @@ jobs:
           git config --global user.name "Nathan Bricard"
           git checkout master
           git merge origin/dev
-          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/BeeSoX/TP_CI_CD_NodeJs.git master
+          git push origin master

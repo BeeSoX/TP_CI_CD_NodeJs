@@ -4,6 +4,6 @@ test('adds 1 + 2 to equal 3', () => {
   // Act
   const result = sum(1, 2);
   
-  // Assert
+  // Assertefz
   expect(result).toBe(3);
 });

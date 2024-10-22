@@ -48,6 +48,8 @@ jobs:
       # Pousser les changements de la branche dev vers master
       - name: Merge dev into master
         run: |
+          git config --global user.email "bricardnathan@gmail.com"
+          git config --global user.name "Nathan Bricard"
           git checkout master
           git merge origin/dev
           git push origin master

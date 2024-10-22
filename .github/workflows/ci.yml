@@ -44,10 +44,6 @@ jobs:
         uses: actions/checkout@v2
 
       # Configurer Git (nécessaire pour les commandes git)
-      - name: Setup Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
 
       # Pousser les changements de la branche dev vers master
       - name: Merge dev into master
